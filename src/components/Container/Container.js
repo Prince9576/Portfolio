@@ -4,7 +4,7 @@ import styles from "./Container.module.css";
 
 const Container = () => {
   return (
-    <div className="container">
+    <div className={styles["container"]}>
       <Home />
     </div>
   );

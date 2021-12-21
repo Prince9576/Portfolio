@@ -1,0 +1,101 @@
+.wrapper {
+  background: var(--color-primary);
+  color: white;
+  min-height: 99vh;
+}
+.profile {
+  width: 80%;
+  margin: 0 auto;
+  padding: 3rem 0;
+  display: flex;
+  align-items: center;
+}
+.info-container {
+  flex: 0 0 60%;
+}
+
+.picture-container {
+  flex: 0 0 40%;
+}
+.info .name {
+  font-size: 2.4rem;
+  letter-spacing: 1px;
+}
+.info .name .highlighted {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: var(--color-secondary);
+}
+.role p {
+  font-size: 3rem;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+.description p {
+  font-size: 1.6rem;
+  max-width: 75%;
+  line-height: 2rem;
+}
+.action {
+  margin: 3rem 0;
+}
+
+.transparent {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+}
+.orange {
+  background-color: var(--color-secondary);
+  color: white;
+  margin-left: 3rem;
+}
+
+.picture img {
+  height: 35rem;
+  width: 35rem;
+  object-fit: cover;
+  border: 0.5rem solid white;
+  border-radius: 50%;
+  float: right;
+  transition: all 0.5s ease-out;
+}
+.picture img:hover {
+  transform: scale(1.05);
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  max-width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .profile {
+    flex-direction: column;
+  }
+  .role {
+    min-height: 8.5rem;
+  }
+  .role p {
+    line-height: 4rem;
+  }
+
+  .transparent {
+    width: 100%;
+  }
+  .orange {
+    margin-top: 1.5rem;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .picture-container {
+    margin-top: 3rem;
+  }
+
+  .picture img {
+    height: 28rem;
+    width: 28rem;
+  }
+}

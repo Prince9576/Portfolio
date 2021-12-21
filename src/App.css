@@ -9,3 +9,28 @@
   justify-content: center;
   align-items: center;
 }
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.btn {
+  cursor: pointer;
+  outline: none;
+  border: 0;
+}
+.btn-action {
+  min-width: 15rem;
+  padding: 1rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  border-radius: 10rem;
+}
+
+@media screen and (max-width: 768px) {
+  * {
+    font-size: 6px;
+  }
+}

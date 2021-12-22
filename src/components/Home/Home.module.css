@@ -2,9 +2,10 @@
   background: var(--color-primary);
   color: white;
   min-height: 99vh;
+  position: relative;
 }
 .profile {
-  width: 80%;
+  width: 65%;
   margin: 0 auto;
   padding: 3rem 0;
   display: flex;
@@ -73,6 +74,7 @@
 @media screen and (max-width: 768px) {
   .profile {
     flex-direction: column;
+    width: 75%;
   }
   .role {
     min-height: 8.5rem;
@@ -91,11 +93,6 @@
   }
 
   .picture-container {
-    margin-top: 3rem;
-  }
-
-  .picture img {
-    height: 28rem;
-    width: 28rem;
+    margin-top: 6rem;
   }
 }

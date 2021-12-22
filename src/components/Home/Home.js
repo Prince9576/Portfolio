@@ -3,11 +3,16 @@ import Links from "../Links/Links";
 import Navbar from "../Navbar/Navbar";
 import Typical from "react-typical";
 import styles from "./Home.module.css";
+import { getBreakPoint } from "../../utilities/breakpoints";
+import { useMediaQuery } from "react-responsive";
 
 const Home = () => {
+  const isMobileView = useMediaQuery({
+    query: `(max-width: ${getBreakPoint("mobile")}px)`,
+  });
   return (
     <div className={styles["wrapper"]}>
-      {/* <Navbar /> */}
+      <Navbar />
       <div className={styles["profile"]}>
         <div className={styles["info-container"]}>
           <div className={styles["info"]}>

@@ -1,0 +1,53 @@
+.wrapper {
+  flex: 0 0 40%;
+}
+.bar {
+  height: 5rem;
+  display: flex;
+  width: 70%;
+  align-items: center;
+  cursor: pointer;
+  padding-bottom: 1rem;
+  position: relative;
+}
+.icon {
+  flex: 0 0 16%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-primary);
+  color: white;
+  padding: 1.5rem 0;
+}
+.icon i {
+  font-size: 2rem;
+}
+.description {
+  flex: 0 0 0%;
+  height: 100%;
+  align-items: center;
+  display: flex;
+  transition: all 0.5s;
+}
+
+.active {
+  background-color: var(--color-primary);
+  color: white;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  flex: 0 0 84%;
+  transition: all 0.5s;
+}
+.desc-text {
+  display: block;
+  position: absolute;
+  left: 8rem;
+  z-index: 5;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.activeDesc {
+  color: white;
+}

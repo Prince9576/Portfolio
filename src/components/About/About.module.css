@@ -1,3 +1,8 @@
+.resume-wrapper {
+  padding: 5rem;
+  margin: 1rem;
+  display: flex;
+}
 .wrapper {
   margin-top: 3rem;
 }

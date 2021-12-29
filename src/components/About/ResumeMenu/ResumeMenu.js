@@ -22,11 +22,6 @@ const defaultMenu = [
     desc: "Projects",
     active: false,
   },
-  {
-    icon: "fas fa-palette",
-    desc: "Interests",
-    active: false,
-  },
 ];
 const ResumeMenu = ({ scrollHandler }) => {
   const [menu, setMenu] = useState(defaultMenu);

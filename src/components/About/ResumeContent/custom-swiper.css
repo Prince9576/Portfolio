@@ -1,0 +1,19 @@
+.swiper {
+  min-height: 25rem;
+}
+.swiper-button-prev {
+  width: 0;
+  height: 0;
+}
+.swiper-button-next {
+  width: 0;
+  height: 0;
+}
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 0rem !important;
+  display: none;
+}
+.swiper-pagination-bullet-active {
+  background: var(--color-secondary) !important;
+}

@@ -10,6 +10,7 @@ body {
 html {
   --color-primary: #24263b;
   --color-secondary: #ff5823;
+  --color-btn-green: rgb(0, 150, 136);
 }
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",

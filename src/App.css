@@ -29,6 +29,14 @@
   border-radius: 10rem;
 }
 
+.generic-square-btn {
+  background: var(--color-btn-green);
+  color: white;
+  width: 10rem;
+  height: 3rem;
+  font-size: 1.2rem;
+  border-radius: 5px;
+}
 @media screen and (max-width: 768px) {
   * {
     font-size: 6px;

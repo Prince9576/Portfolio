@@ -274,3 +274,12 @@
   text-align: center;
   border-radius: 3px;
 }
+
+@media screen and (max-width: 768px) {
+  .projects-wrapper {
+    grid-template-columns: 100%;
+  }
+  .react-card-back {
+    height: 31.5rem;
+  }
+}

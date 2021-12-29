@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import styles from "./ResumeMenu.module.css";
+import { getBreakPoint } from "../../../utilities/breakpoints";
+import { useMediaQuery } from "react-responsive";
 
 const defaultMenu = [
   {
@@ -24,6 +26,9 @@ const defaultMenu = [
   },
 ];
 const ResumeMenu = ({ scrollHandler }) => {
+  const isMobileView = useMediaQuery({
+    query: `(max-width: ${getBreakPoint("mobile")}px)`,
+  });
   const [menu, setMenu] = useState(defaultMenu);
 
   const menuClickHandler = (index) => {
@@ -54,20 +59,24 @@ const ResumeMenu = ({ scrollHandler }) => {
                 <div className={styles.icon}>
                   <i className={item.icon}></i>
                 </div>
-                <div
-                  className={`${styles.description} ${
-                    item.active ? styles.active : ""
-                  }`}
-                ></div>
-                <span
-                  className={
-                    item.active
-                      ? `${styles["desc-text"]} ${styles.activeDesc}`
-                      : `${styles["desc-text"]}`
-                  }
-                >
-                  {item.desc}
-                </span>
+                {!isMobileView && (
+                  <>
+                    <div
+                      className={`${styles.description} ${
+                        item.active ? styles.active : ""
+                      }`}
+                    ></div>
+                    <span
+                      className={
+                        item.active
+                          ? `${styles["desc-text"]} ${styles.activeDesc}`
+                          : `${styles["desc-text"]}`
+                      }
+                    >
+                      {item.desc}
+                    </span>
+                  </>
+                )}
               </div>
             );
           })}

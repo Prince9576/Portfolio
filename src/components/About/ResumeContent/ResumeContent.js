@@ -11,6 +11,8 @@ import "./custom-swiper.css";
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import ReactCardFlip from "react-card-flip";
+import { getBreakPoint } from "../../../utilities/breakpoints";
+import { useMediaQuery } from "react-responsive";
 
 // Import Swiper styles
 import "swiper/css";
@@ -19,6 +21,9 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 
 const ResumeContent = ({ selectedTabIndex, firstTimeTabSet }) => {
+  const isMobileView = useMediaQuery({
+    query: `(max-width: ${getBreakPoint("mobile")}px)`,
+  });
   const getSelectedTabID = (index) => {
     let selectedTab;
     switch (index) {
@@ -124,7 +129,7 @@ const ResumeContent = ({ selectedTabIndex, firstTimeTabSet }) => {
           spaceBetween={10}
           loop={true}
           centeredSlides={true}
-          slidesPerView={3}
+          slidesPerView={isMobileView ? 1 : 3}
           navigation
           pagination={{ clickable: true }}
           onSwiper={(swiper) => console.log(swiper)}

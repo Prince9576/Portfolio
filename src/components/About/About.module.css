@@ -6,3 +6,10 @@
 .wrapper {
   margin-top: 3rem;
 }
+
+@media screen and (max-width: 768px) {
+  .resume-wrapper {
+    flex-direction: column;
+    padding: 2rem;
+  }
+}

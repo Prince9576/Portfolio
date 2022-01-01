@@ -132,9 +132,6 @@ const ResumeContent = ({ selectedTabIndex, firstTimeTabSet }) => {
           slidesPerView={isMobileView ? 1 : 3}
           navigation
           pagination={{ clickable: true }}
-          onSwiper={(swiper) => console.log(swiper)}
-          onSlideChange={() => console.log("slide change")}
-          effect="cube"
         >
           {SKILLS_DATA.map((skill, index) => {
             return (
@@ -175,12 +172,14 @@ const ResumeContent = ({ selectedTabIndex, firstTimeTabSet }) => {
   );
 };
 
-const CardStyle = {
-  boxShadow: "0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23)",
-  height: "100%",
-};
-
 const Card = ({ project }) => {
+  const CardStyle = {
+    boxShadow: "0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23)",
+  };
+  const isMobileView = useMediaQuery({
+    query: `(max-width: ${getBreakPoint("mobile")}px)`,
+  });
+  isMobileView ? (CardStyle.height = "35rem") : (CardStyle.height = "100%");
   const [isFlipped, setIsFlipped] = React.useState(false);
   const projectInfoClickHandler = () => {
     setIsFlipped((prev) => !prev);

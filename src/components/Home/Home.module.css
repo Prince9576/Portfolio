@@ -67,7 +67,7 @@
 
 .footer {
   position: absolute;
-  bottom: 0;
+  bottom: -1px;
   max-width: 100%;
 }
 

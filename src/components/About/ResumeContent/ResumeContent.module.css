@@ -282,4 +282,10 @@
   .react-card-back {
     height: 31.5rem;
   }
+  .react-card-front {
+    height: 31.5rem;
+  }
+  .info {
+    flex: 0 0 90%;
+  }
 }

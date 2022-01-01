@@ -161,3 +161,41 @@ export const PROJECTS_DATA = [
     imageSrc: "portfolio_ss.png",
   },
 ];
+
+export const TESTIMONIALS_DATA = [
+  {
+    name: "Mihir Kumar",
+    opinion:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
+    imageSrc: "Mihir_dp.jpeg",
+    designation: "SDE 2 at Twillio",
+  },
+  {
+    name: "Alok Raj",
+    opinion:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
+    imageSrc: "Alok_dp.jpeg",
+    designation: "Senior Software Engineer at Globant",
+  },
+  {
+    name: "Piyush Kumar",
+    opinion:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
+    imageSrc: "Piyush_dp.jpeg",
+    designation: "Software Engineer at TCS",
+  },
+  {
+    name: "Mihir Kumar",
+    opinion:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
+    imageSrc: "Mihir_dp.jpeg",
+    designation: "SDE 2 at Twillio",
+  },
+  {
+    name: "Alok Raj",
+    opinion:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
+    imageSrc: "Alok_dp.jpeg",
+    designation: "Senior Software Engineer at Globant",
+  },
+];
